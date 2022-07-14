@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" >
+</head>
+</head>
+<body>
+    <div class="container" id="cv-form">
+        <h1 class="text-center my-4">Online Resume Generator</h1>
+    
+
+    <div class="row py-3 mx-5">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <!-- Personal Information -->
+            <h3>Personal Information</h3>
+            <br>
+
+            <div class="form-group">
+                <label for="namefield">Your Name</label>
+                <input type="text" id="namefield" for="namefield" class="form-control" required></input>
+            </div>
+
+            <div class="form-group">
+                <label for="contactfield">Your Contact Number</label>
+                <input type="text" id="contactfield" for="contactfield" class="form-control" required></input>
+            </div>
+
+
+            <div class="form-group">
+                <label for="addressfield">Your Address</label>
+                <textarea type="text" id="addressfield" for="addressfield" class="form-control" rows = "1" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="linkedin">LinkdIn Profile</label>
+                <input type="text" id="linkedin" for="linkedin" class="form-control"  required></input>
+            </div>
+
+            <div class="form-group">
+                <label for="linkedin">Email</label>
+                <input type="text" id="linkedin" for="linkedin" class="form-control"  required></input>
+            </div>
+
+            <div class="form-group">
+                <label for="linkedin">Languages (add using comma)</label>
+                <input type="text" id="linkedin" for="linkedin" class="form-control"  required></input>
+            </div>
+
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <!-- Professional Information -->
+            <h3>Professional Information</h3> <br>  
+            <div class="form-group">
+                <label for="role">Role</label>
+                <input type="text" id="role" for="role" class="form-control" required></input>
+            </div>
+
+            <div class="form-group">
+                <label for="Objective">Objective</label>
+                <textarea type="text" id="Objective" for="Objective" class="form-control" rows = "1" required></textarea>
+            </div>
+
+            <div class="form-group mt-2" id="we">
+                <label for="work">Work Experience</label>
+                <textarea rows="1" type="text" id="work" for="work" class="form-control workfield"  required></textarea>
+
+                <div class="container text-center mt-3" id="weAddButton">
+                    <button class="btn btn-dark" onclick="addNewWork()">Add Experience</button>
+                </div>
+            </div>
+
+            <div class="form-group mt-2" id="eq">
+                <label for="education">Educational Qualification</label>
+                <textarea rows="1" type="text" id="education" for="education" class="form-control eqfield"  required></textarea> 
+                
+                <div class="container text-center mt-3" id="weAddButton">
+                    <button class="btn btn-dark" onclick="addeducation()">Add Education</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center">
+            <div onclick = "generate()" class="generate btn btn-dark w-50 mt-5">Generate your cv</div>
+        </div>
+
+    </div>
+</div>
+<!-- CV Template -->
+<div class="container" id="cv-template">
+    <h1>This is my resume</h1>
+    <div class="col-md-4">
+        <h2 id="namefinal">Naveen Kumar</h2>
+        <p>+919789462336</p>
+        <P>India</P>
+
+        <a href="https://in.linkedin.com/">LinkedIn | </a>
+        <a href="https://github.in/">Github |</a>
+        <a href="https://facebook.com/">Facebook</a>
+
+    </div>
+
+    <div class="col-md-8">
+        <!-- Second Column -->
+    </div>
+</div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>
